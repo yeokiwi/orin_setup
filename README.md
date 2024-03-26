@@ -24,4 +24,13 @@ Use the following command to clone image:
 
 sudo ./flash.sh -r jetson-agx-orin-devkit mmcblk0p1
 
+https://learn.microsoft.com/en-us/windows/wsl/connect-usb
+Attach a USB device if you are using WSL for flashing
+
+look for USB device with the VID:PID as 0955:7023
+
+Since the orin will reset during flashing, the usb will be detached. So, for wsl flashing, it is necessary to set to auto-attach for usb
+
+Eg. usbipd attach --wsl --auto-attach --bus-id 1-10
+
 
