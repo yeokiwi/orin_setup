@@ -5,7 +5,9 @@ most of the steps were ok except installation of V4L. you will need to compile n
 After completion, cloning of agx orin image.
 
 https://docs.nvidia.com/jetson/archives/r35.4.1/DeveloperGuide/text/SD/FlashingSupport.html#basic-flashing-script-usage
+
 For flash.sh, you will need to install the prerequisites
+
 sudo tools/l4t_flash_prerequisites.sh
 
 Use the following commmand to clone the image
