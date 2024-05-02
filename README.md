@@ -1,3 +1,20 @@
+For WSL,
+
+to list the usb for AGX Orin:
+
+usbipd list
+
+look for 0955:7023 device
+
+to bind the usb for sharing:
+
+usbipd bind -b 1-1
+
+To attach to WSL
+
+usbipd attach --wsl --auto-attach --build 1-1
+
+
 The pdf contains steps to reprogram the agx orin and patch up the OS Image and dtb to connect to leopard GSML camera.
 
 most of the steps were ok except installation of V4L. you will need to compile natively rather than apt install.
