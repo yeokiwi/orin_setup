@@ -28,9 +28,11 @@ For flash.sh, you will need to install the prerequisites
 sudo tools/l4t_flash_prerequisites.sh
 
 Use the following commmand to clone the image from AGX Orin
+
 sudo ./flash.sh -r -k APP -G backup.img jetson-agx-orin-devkit mmcblk0p1
 
 The backup will generate a sparse image(backup.img) and raw image(backup.img.raw)
+
 Both image can be used for cloning.Raw image can be used to generate sparse image.
 
 Copy backup.img to Linux_for_Tegra/bootloader/ system.img. It is advisable to backup the current system.img
@@ -46,6 +48,7 @@ Use the following command to clone image to AGX Orin:
 sudo ./flash.sh -r jetson-agx-orin-devkit mmcblk0p1
 
 https://learn.microsoft.com/en-us/windows/wsl/connect-usb
+
 Attach a USB device if you are using WSL for flashing
 
 look for USB device with the VID:PID as 0955:7023
