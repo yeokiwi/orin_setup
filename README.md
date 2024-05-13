@@ -27,7 +27,7 @@ For flash.sh, you will need to install the prerequisites
 
 sudo tools/l4t_flash_prerequisites.sh
 
-Use the following commmand to clone the image
+Use the following commmand to clone the image from AGX Orin
 sudo ./flash.sh -r -k APP -G backup.img jetson-agx-orin-devkit mmcblk0p1
 
 The backup will generate a sparse image(backup.img) and raw image(backup.img.raw)
@@ -41,7 +41,7 @@ If root file system of the source device for clone is resized during oem-config,
 For example, with jetson-agx-orin-devkit, root file system (APP) is the final partition before secondary_gpt. If the APP is resized to maximum allowed size,
 the allocation_attribute of APP partition in Linux_for_Tegra/bootloader/t186ref/cfg/flash_t234_qspi_sdmmc.xml must be updated from 0x8 to 0x808.
 
-Use the following command to clone image:
+Use the following command to clone image to AGX Orin:
 
 sudo ./flash.sh -r jetson-agx-orin-devkit mmcblk0p1
 
