@@ -70,6 +70,11 @@ https://developer.nvidia.com/embedded/jetson-linux-archive
 3. Driver Package (BSP) Sources https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v5.0/sources/public_sources.tbz2
 4. Bootlin Toolchain gcc 9.3 https://developer.nvidia.com/embedded/jetson-linux/bootlin-toolchain-gcc-93
 
-Steps to recompile the kernel:
+Steps to recompile the kernel by nvidia scripts:
 
 https://docs.nvidia.com/jetson/archives/r35.3.1/DeveloperGuide/text/SD/Kernel/KernelCustomization.html
+
+Using typical linux recompilation steps:
+
+https://chipnbits.github.io/content/projects/RLUnicycle/rtkernel/rtpatch.html
+
