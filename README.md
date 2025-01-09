@@ -59,4 +59,17 @@ Since the orin will reset during flashing, the usb will be detached. So, for wsl
 
 Eg. usbipd attach --wsl --auto-attach --bus-id 1-10
 
+# H1 Recompile Nvidia kernel OS guide
 
+Download the following archives of the correct jetson version:
+
+https://developer.nvidia.com/embedded/jetson-linux-archive
+
+1. Driver Package (BSP) https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v5.0/release/jetson_linux_r35.5.0_aarch64.tbz2
+2. Sample Root Filesystem https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v5.0/release/tegra_linux_sample-root-filesystem_r35.5.0_aarch64.tbz2
+3. Driver Package (BSP) Sources https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v5.0/sources/public_sources.tbz2
+4. Bootlin Toolchain gcc 9.3 https://developer.nvidia.com/embedded/jetson-linux/bootlin-toolchain-gcc-93
+
+Steps to recompile the kernel:
+
+https://docs.nvidia.com/jetson/archives/r35.3.1/DeveloperGuide/text/SD/Kernel/KernelCustomization.html
