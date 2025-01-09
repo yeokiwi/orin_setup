@@ -1,4 +1,4 @@
-# H1 Reprogramming Guide
+# Reprogramming Guide
 
 For WSL,
 
@@ -59,7 +59,7 @@ Since the orin will reset during flashing, the usb will be detached. So, for wsl
 
 Eg. usbipd attach --wsl --auto-attach --bus-id 1-10
 
-# H1 Recompile Nvidia kernel OS guide
+# Recompile Nvidia kernel OS guide
 
 Download the following archives of the correct jetson version:
 
