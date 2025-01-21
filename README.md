@@ -78,3 +78,26 @@ Using typical linux recompilation steps:
 
 https://chipnbits.github.io/content/projects/RLUnicycle/rtkernel/rtpatch.html
 
+# How to build Jetson Orin offline
+
+Download the following packages:
+
+1. Driver Package (BSP) https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v5.0/release/jetson_linux_r35.5.0_aarch64.tbz2
+
+Create a new directory for the os and bootloader: mkdir r355_os,  cd r355_os
+
+Uncompress jetson_linux_r35.5.0_aarch64.tbz2 : sudo tar ../jetson_linux_r35.5.0_aarch64.tbz2
+
+After uncompressing, it should have a directory called Linux_for_Tegra.
+
+2. Sample Root Filesystem https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v5.0/release/tegra_linux_sample-root-filesystem_r35.5.0_aarch64.tbz2
+
+cd Linux_for_Tegra, cd rootfs
+
+Uncompress tegra_linux_sample-root-filesystem_r35.5.0_aarch64.tbz2: sudo tar ../../../tegra_linux_sample-root-filesystem_r35.5.0_aarch64.tbz2
+
+change directory to Linux_for_Tegra : cd ..
+
+perform sudo ./apply_binaries.sh
+
+
