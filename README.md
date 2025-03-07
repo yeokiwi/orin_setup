@@ -10,11 +10,26 @@ look for 0955:7023 device
 
 to bind the usb for sharing:
 
-usbipd bind -b 1-1
+usbipd bind -busid 1-1
 
 To attach to WSL
 
-usbipd attach --wsl --auto-attach --build 1-1
+usbipd attach --wsl --auto-attach --busid 1-1
+
+##if you encountered the following error
+
+"usbipd: warning: A firewall appears to be blocking the connection; ensure TCP port 3240 is allowed."
+
+you will need to Create or edit %UserProfile%.wslconfig and add the following:
+
+[wsl2]
+
+networkingMode=mirrored
+
+The .wslconfig file does not exist by default. It must be created and stored in your %UserProfile% directory to apply these configuration settings.
+Used to configure settings globally across all installed Linux distributions running as the WSL 2 version.
+Can be used only for distributions run by WSL 2. Distributions running as WSL 1 will not be affected by this configuration as they are not running as a virtual machine.
+To get to your %UserProfile% directory, in PowerShell, use cd ~ to access your home directory (which is typically your user profile, C:\Users\<UserName>) or you can open Windows File Explorer and enter %UserProfile% in the address bar. The directory path should look something like: C:\Users\<UserName>\.wslconfig.
 
 
 The pdf contains steps to reprogram the agx orin and patch up the OS Image and dtb to connect to leopard GSML camera.
