@@ -122,4 +122,16 @@ change directory to Linux_for_Tegra : cd ..
 
 perform sudo ./apply_binaries.sh
 
+# additional libraries
 
+1. sudo apt install nvidia-jetpack
+
+2. sudo apt install qt5-default
+
+3. sudo apt install libssl-dev
+
+4. Download cmake.
+
+5. ./bootstrap --qt-gui
+
+6. 
