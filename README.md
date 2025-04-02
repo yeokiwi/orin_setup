@@ -132,6 +132,6 @@ perform sudo ./apply_binaries.sh
 
 4. Download cmake.
 
-5. ./bootstrap --qt-gui
+5. ./bootstrap --qt-gui;make -j4;sudo make install
 
 6. 
